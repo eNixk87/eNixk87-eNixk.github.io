@@ -71,6 +71,7 @@ header {
 }
 
 .menu_box {
+    top: 100px;
     display: block;
     position: fixed;
     visibility: hidden;
