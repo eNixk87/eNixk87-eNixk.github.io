@@ -381,6 +381,7 @@ input:checked ~ .box_4 {
     }
 
     .menu_box {
+        top: auto;
         display: flex;
         position: absolute;
         visibility: visible;
