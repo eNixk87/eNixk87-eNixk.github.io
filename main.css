@@ -47,7 +47,6 @@ header {
     height: 26px;
     cursor: pointer;
     z-index: 2000;
-    
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -290,6 +289,10 @@ input {
     display: none;
 }
 
+label, input {
+    cursor: pointer;
+}
+
 label .massage, .yoga, .access, .reiki {
     background: url(assets/blue-background-flower-of-life_2.svg) no-repeat center center; 
     background-size: cover;
@@ -315,7 +318,7 @@ label .massage, .yoga, .access, .reiki {
 .accordian_3 .box_3,
 .accordian_4 .box_4 {
     max-height: 0;
-    overflow: hidden;
+
     opacity: 0;
     padding: 10px 10px;
 
@@ -425,7 +428,11 @@ input:checked ~ .box_4 {
 }
 
 @media (min-width: 950px) {
-
+    .menu_box {
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+    }
 
     .massage:hover, .access:hover, .reiki:hover, .yoga:hover {
         transition: transform 0.3s ease, opacity 0.3s ease;
