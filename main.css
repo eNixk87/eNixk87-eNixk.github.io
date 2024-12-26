@@ -47,8 +47,13 @@ header {
     height: 26px;
     cursor: pointer;
     z-index: 2000;
+    
 }
-
+.menu__btn:focus,
+.menu_box a:focus {
+    outline: none;  /* Removes the blue outline */
+    background-color: transparent; /* Optional: Ensures no background appears */
+}
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -101,6 +106,7 @@ nav ul {
 }
 
 nav ul a {
+    outline: none;
     display: block;
     position: relative;
     padding: 24px 12px;
@@ -330,9 +336,26 @@ input:checked ~ .box_4 {
 }
 
 .massage:active, .access:active, .reiki:active, .yoga:active {
-    transform: scale(1.05); /* Touch effect for mobile */
+    transform: scale(1.05);
 }
 
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noSelect:focus {
+    outline: none !important;
+    border: 2px ridge #ffffff,0;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    
+}
                 /* Media queries */
 /* -----------------------------------------------*/
 /* ---------------------------------------------- */
