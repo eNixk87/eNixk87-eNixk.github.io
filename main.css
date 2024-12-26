@@ -1,0 +1,474 @@
+body, html {
+    height: 100%;
+    margin: 5px;
+    background: url(assets/blue-background-flower-of-life_2.svg) no-repeat center; 
+    background-size: cover;
+    background-color: rgb(20, 92, 128);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img { 
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    width: 100px;
+    height: auto;
+}
+
+#menu__toggle {
+    opacity: 0;
+    position: fixed;
+    z-index: 2000;
+}
+
+.menu__btn {
+    display: block;
+    position: fixed;
+    top: auto;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fdfdfd;
+    transition: 0.3s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu_box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    width: 200px;
+    border-bottom-left-radius: 80px;
+    border-top-left-radius: 80px;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(20, 92, 128);
+    box-shadow: 1px 0px 6px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+}
+
+#menu__toggle:checked ~ .menu_box {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    display: block;
+    position: relative;
+    padding: 24px 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul a:hover {
+    color: #79B1CD;
+}
+
+.menu_box li a.active {
+    color:#79B1CD;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu_box {
+    visibility: visible;
+    right: 0;
+}
+
+.main_body h1, p {
+    text-align: center;
+}
+
+.main_body h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    color: white;
+}
+
+.call-to-action {
+    color: rgb(20, 92, 128);
+    text-decoration: none;
+    background: white;
+    text-align: center;
+    margin-top: 8%;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 250px;
+    border-radius: 50px;
+    display: block;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.call-to-action:hover {
+    color:#79B1CD;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;  
+}
+
+img.service_logo {
+    margin-top: 10%;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu_box {
+    display: block;
+}
+
+.main_body {
+    margin: 10px;
+}
+
+.container {
+    margin: auto;
+    min-height: 100vh;
+}
+
+
+
+                /* About us page */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+
+.video-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 56.25%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+                /* our services page */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_services h1 {
+    padding-bottom: 5%;
+}
+
+.main_services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.massage, .access, .reiki, .yoga {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.massage img, .access img, .reiki img, .yoga img {
+    position: relative;
+    min-width: 120px;
+    max-width: 120px;
+    height: auto;
+    margin-right: 10%;
+}
+
+.massage h2, .access h2, .reiki h2, .yoga h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:white;
+}
+
+.main_services p {
+    text-align: left;
+}
+
+.main_services li {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    color: white;
+}
+
+input {
+    display: none;
+}
+
+label .massage, .yoga, .access, .reiki {
+    background: url(assets/blue-background-flower-of-life_2.svg) no-repeat center center; 
+    background-size: cover;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
+    margin-top: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.service_container p, li {
+    margin-left: 10%;
+    margin-right:10%;
+}
+
+.accordian .box_1,
+.accordian_2 .box_2,
+.accordian_3 .box_3,
+.accordian_4 .box_4 {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 10px 10px;
+
+}
+
+input:checked ~ .box_1,
+input:checked ~ .box_2,
+input:checked ~ .box_3,
+input:checked ~ .box_4 {
+    max-height: 50%;
+    opacity: 1;
+    padding: 10px 10px;
+
+}
+
+.massage:active, .access:active, .reiki:active, .yoga:active {
+    transform: scale(1.05); /* Touch effect for mobile */
+}
+
+                /* Media queries */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+
+@media (min-width: 750px) {
+    .massage:hover, .access:hover, .reiki:hover, .yoga:hover {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: scale(1.05);
+    }
+    .main_services {
+        margin: 50px;
+    }
+
+    p {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    img.service_logo {
+        margin-top: 10px;
+        width: 80%;
+        position: relative;
+        height: 600px;
+        padding-top: 50px;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+
+    #menu__toggle {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul a {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .menu_box {
+        display: flex;
+        position: absolute;
+        visibility: visible;
+        right: 0;
+        width: auto;
+        padding: 0;
+        padding-bottom: 20%;
+        margin-right: 5%;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: transparent;
+        transform: translateX(0%);
+    }
+    
+    .container {
+        gap: 10;
+        position: relative;
+        max-width: 1200px;
+        padding: auto;
+        margin: auto;
+    }
+}
+
+@media (min-width: 950px) {
+
+
+    .massage:hover, .access:hover, .reiki:hover, .yoga:hover {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: scale(1.05);
+    }
+    .main_body {
+        margin-top: 20px;
+    }
+
+    .container {
+        gap: 10;
+        position: relative;
+        max-width: 1200px;
+        padding: auto;
+        margin: auto;
+    }
+    p {
+        margin: 20px;
+    }
+
+    .main_body {
+        display: flex;
+        align-items: center;
+    }
+    
+    img.service_logo {
+        width: 550px;
+        position: relative;
+        height: auto;;
+        padding:0;
+        margin: 0;
+        left: 0%;
+        transform: translateX(0%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .massage:hover, .access:hover, .reiki:hover, .yoga:hover {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: scale(1.05);
+    }
+    .main_services {
+        margin: 50px;
+    }
+    .main_body {
+        margin-top:25px;
+    }
+    .container {
+        gap: 10;
+        position: relative;
+        max-width: 1200px;
+        padding: auto;
+        margin: auto;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+    }
+    p {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .call-to-action {
+        margin-top: 20px;
+    }
+}
