@@ -207,30 +207,7 @@ img.service_logo {
 
 
 
-                /* About us page */
-/* -----------------------------------------------*/
-/* ---------------------------------------------- */
-/* -----------------------------------------------*/
-/* ---------------------------------------------- */
 
-.video-container {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    max-width: 1200px;
-    padding-bottom: 56.25%;
-    margin: 0 auto;
-}
-
-.video-container iframe {
-    position: absolute;
-    padding-top: 100px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
 
                 /* our services page */
 /* -----------------------------------------------*/
@@ -238,11 +215,7 @@ img.service_logo {
 /* -----------------------------------------------*/
 /* ---------------------------------------------- */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .main_services h1 {
     padding-bottom: 5%;
@@ -294,8 +267,6 @@ label, input {
 }
 
 label .massage, .yoga, .access, .reiki {
-    background: url(assets/blue-background-flower-of-life_2.svg) no-repeat center center; 
-    background-size: cover;
     display: flex;
     cursor: pointer;
     padding: 10px;
@@ -318,10 +289,9 @@ label .massage, .yoga, .access, .reiki {
 .accordian_3 .box_3,
 .accordian_4 .box_4 {
     max-height: 0;
-
     opacity: 0;
     padding: 10px 10px;
-
+    overflow: hidden;
 }
 
 input:checked ~ .box_1,
@@ -331,7 +301,6 @@ input:checked ~ .box_4 {
     max-height: 50%;
     opacity: 1;
     padding: 10px 10px;
-
 }
 
 .massage:active, .access:active, .reiki:active, .yoga:active {
@@ -355,6 +324,31 @@ input:checked ~ .box_4 {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     
 }
+
+                /* About us page */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+
+.video-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 56.25%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
                 /* Media queries */
 /* -----------------------------------------------*/
 /* ---------------------------------------------- */
@@ -365,9 +359,6 @@ input:checked ~ .box_4 {
     .massage:hover, .access:hover, .reiki:hover, .yoga:hover {
         transition: transform 0.3s ease, opacity 0.3s ease;
         transform: scale(1.05);
-    }
-    .main_services {
-        margin: 50px;
     }
 
     p {
