@@ -333,13 +333,13 @@ input:checked ~ .box_4 {
 .about_us-body {
     margin-bottom: 5%;
 }
-.video-container {
+.map-container {
+    margin-top: 20px;
     position: relative;
     width: 100%; /* Full width */
-    padding-top: 56.25%;
   }
   
-  .video-container iframe {
+  .map-container iframe {
     position: absolute;
     top: 0;
     left: 0;
