@@ -330,13 +330,53 @@ input:checked ~ .box_4 {
 /* ---------------------------------------------- */
 /* -----------------------------------------------*/
 /* ---------------------------------------------- */
+
+.about_us-body h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 400;
+}
+
+.about_us-body h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+
+.opening, .location {
+    display: flex;
+    flex-direction: column;
+    border: 2px rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+
+.about_us-body ul {
+    color: white;
+}
+
 .about_us-body {
-    margin-bottom: 5%;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 .map-container {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     position: relative;
-    width: 100%; /* Full width */
+    width: 100%;
+    border-radius: 55px;
+
   }
   
   .map-container iframe {
@@ -347,22 +387,54 @@ input:checked ~ .box_4 {
     height: 100%;
   }
 
-  .gallery {
-    padding-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 10px; /* Space between images */
-    
+
+.carousel {
+    max-width: 100%;
+    min-height:auto;
 }
 
-.gallery img {
+.slider, .slider_2{
+    display: flex;
+    aspect-ratio: 1/1;
+    overflow: hidden;
     width: 100%;
-    height: auto; /* Ensures images scale correctly */
-    object-fit: cover; /* Crops images nicely if needed */
-    border-radius: 55px; /* Optional: Rounded edges */
-    box-shadow: 1px 0px 6px rgba(255, 255, 255, 0.2);
+    scroll-behavior: smooth;
+    border-radius: 55px;
 }
 
+.slider img{
+    flex: 1 0 100%;
+    object-fit: cover;
+}
+.slider_2 img{
+    flex: 1 0 100%;
+    object-fit: cover;
+}
+ 
+.nav {
+    display: flex;
+    padding-top: 10px;
+    gap: 1rem;
+}
+
+.nav a{
+    border-radius: 55px;
+    overflow: hidden;
+    opacity: .7;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
+}
+
+.nav img{
+    width: 100%;
+    object-fit: cover;
+}
+.nav a:hover{
+    opacity: 1;
+}
+
+.wrapper {
+    padding-bottom: 50px;
+}
 
                 /* Media queries */
 /* -----------------------------------------------*/
@@ -371,6 +443,31 @@ input:checked ~ .box_4 {
 /* ---------------------------------------------- */
 
 @media (min-width: 750px) {
+    .carousel {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50;
+    }
+    .wrapper {
+        max-width:40%;
+    }
+
+    .wrapper_2 {
+        max-width: 40%;
+    }
+    .op_loc {
+        display: flex;
+        gap: 50px;
+    }
+
+    .location {
+        padding: 1%;
+    }
+
+    .opening {
+        padding: 2%;
+    }
+
     .massage:hover, .access:hover, .reiki:hover, .yoga:hover {
         transition: transform 0.3s ease, opacity 0.3s ease;
         transform: scale(1.05);
