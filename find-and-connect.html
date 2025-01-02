@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>location - Chemin Vers Soi</title>
+    <title>find & connect - Chemin Vers Soi</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div class="container">
         <header>
             <a href="index.html" class="logo noSelect">
-                <img src="assets/compagny_logo.svg" alt="Chemin Vers Soi Logo">
+                <img src="assets/compagny_logo.svg" alt="Chemin Vers Soi logo, featuring the acronym CVS shaped within a flower of life design, symbolizing a journey towards inner peace, balance, and personal well-being">
             </a>
             <nav>
                 <input id="menu__toggle" type="checkbox" />
@@ -21,7 +21,7 @@
                     <li><a href="index.html" class="noSelect">home</a></li>
                     <li><a href="our_services.html" class="noSelect">our services</a></li>
                     <li><a href="about_us.html">about us</a></li>
-                    <li><a href="location.html" class="active noSelect">location</a></li>
+                    <li><a href="find-and-connect.html" class="active noSelect">find & connect</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,7 +52,7 @@
                                 <img id="slide-3" src="assets/street_image.jpg" alt="Empty street lined with houses, capturing a serene and peaceful scene with no people in sight, highlighting the beauty of the residential area">
                                 <img id="slide-4" class="building" src="assets/business_house.jpg" alt="The blue business house surrounded by lush greenery, located on a quiet street alongside other buildings, offering a calm and welcoming environment for holistic services">
                             </div>
-                            <div class="nav">
+                            <div class="nav-img">
                                 <a href="#slide-1" class="noSelect">
                                     <img src="assets/location_image.jpg" alt="Aerial view of a coastal area featuring the sea, a sandy beach, boats on the water, and houses lining the shoreline, creating a peaceful and scenic landscape">
                                 </a>
@@ -74,7 +74,7 @@
                                 <img id="slide_3" src="assets/reiki_image.jpg" alt="Reiki session where the therapist is gently pulling a client's head to one side while providing energy healing on the trapezius area">
                                 <img id="slide_4" class="building" src="assets/yoga_image.jpg" alt="Woman performing a seated yoga twist on a mat in a peaceful, wooden yoga studio">
                             </div>
-                            <div class="nav">
+                            <div class="nav-img">
                                 <a href="#slide_1" class="noSelect">
                                     <img src="assets/access-bars_image.jpg" alt="Therapist performing an Access Bars treatment with hands hovering over a client's head">
                                 </a>
@@ -88,6 +88,36 @@
                                     <img class="building" src="assets/yoga_image.jpg" alt="Woman stretching in a seated yoga twist in a serene yoga studio">
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                        <div class="container-contact" id="contact-form-section">
+                            <h2>Get in Touch</h2>
+                            <p>We’d love to hear from you! Whether you have a question about our services, want to book an appointment, or need more information, feel free to reach out. We’re here to help you on your journey to well-being.</p>        
+                            <form>
+                                <div class="form-group">
+                                    <label for="firstname">First name*</label>
+                                    <input type="text" name="firstname" id="firstname" required class="form-element"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Last name*</label>
+                                    <input type="text" name="lastname" id="lastname" required class="form-element"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address*</label>
+                                    <input type="email" name="email" id="email" required class="form-element"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" name="phone" id="phone" class="form-element"/>
+                                </div>                                 
+                                <div class="form-group full">
+                                    <label for="message">How can we assist you?</label>
+                                    <textarea name="message" id="message" class="form-element" placeholder="Tell us what you're looking for (e.g., booking a service, more information)..."></textarea>
+                                </div>            
+                                <div class="submit-group">
+                                    <input type="submit" value="send message" />
+                                </div>
+                            </form>
                         </div>
             </main>
         </div>
