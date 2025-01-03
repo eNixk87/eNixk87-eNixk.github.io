@@ -323,7 +323,7 @@ input:checked ~ .box_4 {
 }
 
 .noSelect:focus {
-    outline: none !important;
+    outline: none;
     border: 2px ridge #ffffff,0;
     border-radius: 50px;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -369,7 +369,7 @@ input:checked ~ .box_4 {
 }
 
 
-                /* Location page */
+                /* Find & connect page */
 /* -----------------------------------------------*/
 /* ---------------------------------------------- */
 /* -----------------------------------------------*/
@@ -391,7 +391,7 @@ input:checked ~ .box_4 {
     font-weight: 500;
 }
 
-h2 {
+.about_us-text h2 {
     border: 2px ridge #ffffff,0;
     border-radius: 20px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
@@ -404,7 +404,6 @@ h2 {
     font-size: 1.3rem;
     color: white;
     font-weight: 600;
-    /* text-decoration: underline; */
     border: 2px ridge #ffffff,0;
     border-radius: 20px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
@@ -423,7 +422,6 @@ h2 {
 
 
 .location-body ul {
-
     color: white;
     line-height: 1.5;
 }
@@ -438,7 +436,6 @@ h2 {
     position: relative;
     width: 100%;
     border-radius: 55px;
-
 }
   
 .map-container iframe {
