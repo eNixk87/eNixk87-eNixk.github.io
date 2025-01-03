@@ -330,6 +330,45 @@ input:checked ~ .box_4 {
     
 }
 
+                /* About us page */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+/* -----------------------------------------------*/
+/* ---------------------------------------------- */
+
+.about_us-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 12px;
+}
+
+.about_us-text h2 {
+    padding-bottom: 10px;
+}
+
+.about_us-text p {
+    margin-top: 5px;
+}
+
+.video-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 56.25%;
+    margin: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
                 /* Location page */
 /* -----------------------------------------------*/
 /* ---------------------------------------------- */
@@ -344,10 +383,18 @@ input:checked ~ .box_4 {
 .location-body p {
     margin: 10px;
     padding-top: 50px;
+    font-weight: 500;
 }
 
 .location p {
     padding-top: 0;
+    font-weight: 500;
+}
+
+h2 {
+    border: 2px ridge #ffffff,0;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
 }
 
 .location-body h2 {
@@ -356,7 +403,12 @@ input:checked ~ .box_4 {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3rem;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
+    /* text-decoration: underline; */
+    border: 2px ridge #ffffff,0;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px -1px, rgba(255, 255, 255, 0.06) 0px 2px 4px -1px;
+    padding: 10px;
 }
 
 
@@ -364,7 +416,6 @@ input:checked ~ .box_4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     width: 100%;
     height: 100%;
 
@@ -449,7 +500,7 @@ input:checked ~ .box_4 {
     padding-bottom: 50px;
 }
 
-/*///////////////// CONTACT FORM //////////////////*/
+/*///////////////// Contact form //////////////////*/
 /*////////////////////////////////////////////////*/
 
 .container-contact {
